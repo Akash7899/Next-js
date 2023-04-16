@@ -244,6 +244,7 @@
   list-style: none;
   font-weight: bold;
   padding: 0px 16px;
+  cursor: pointer;
 
 }
 
@@ -261,7 +262,7 @@
   margin: 10px 0;
 }
 
-.blogcontent .blogItem h3{
+.blogcontent .blogItem h3 {
   padding: 5px 0;
   margin: 5px 0;
 }

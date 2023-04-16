@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,30 @@ export default function Home() {
         <div className="container">
           <nav className={styles.mainnav}>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">contact</a></li>              
+              <Link href="/">
+                {" "}
+                <a>
+                  <li>Home</li>{" "}
+                </a>
+              </Link>
+              <Link href="/about">
+                {" "}
+                <a>
+                  <li>About</li>
+                </a>{" "}
+              </Link>
+              <Link href="/blog">
+                {" "}
+                <a>
+                  <li>Blogs</li>
+                </a>{" "}
+              </Link>
+              <Link href="/contact">
+                {" "}
+                <a>
+                  <li>contact</li>
+                </a>{" "}
+              </Link>
             </ul>
           </nav>
         </div>
@@ -30,36 +51,52 @@ export default function Home() {
         <div className={styles.blogswrap}>
           <div className={styles.blogheading}>
             <h1> My First Blog Page</h1>
-            <p>This is the file control system on next js
-
-            </p>
+            <p>This is the file control system on next js</p>
           </div>
         </div>
         <div className={styles.blogcontent}>
           <h2>Popular Blog</h2>
           <div className={styles.blogItem}>
             <h3>Next.js 13.3</h3>
-            <p>Next.js 13.3 adds popular community-requested features and is the last release before the App Router is stable, including:</p>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
           </div>
           <div className={styles.blogItem}>
             <h3>Next.js 13.3</h3>
-            <p>Next.js 13.3 adds popular community-requested features and is the last release before the App Router is stable, including:</p>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
           </div>
           <div className={styles.blogItem}>
             <h3>Next.js 13.3</h3>
-            <p>Next.js 13.3 adds popular community-requested features and is the last release before the App Router is stable, including:</p>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
           </div>
           <div className={styles.blogItem}>
             <h3>Next.js 13.3</h3>
-            <p>Next.js 13.3 adds popular community-requested features and is the last release before the App Router is stable, including:</p>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
           </div>
           <div className={styles.blogItem}>
             <h3>Next.js 13.3</h3>
-            <p>Next.js 13.3 adds popular community-requested features and is the last release before the App Router is stable, including:</p>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
           </div>
           <div className={styles.blogItem}>
             <h3>Next.js 13.3</h3>
-            <p>Next.js 13.3 adds popular community-requested features and is the last release before the App Router is stable, including:</p>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
           </div>
         </div>
       </main>
