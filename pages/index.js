@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-import Dummy from "@/component/dummy";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,90 +15,38 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.navbar}>
-        <div className="container">
-          <Dummy />
-          <nav className={styles.mainnav}>
-            <ul>
-              <Link href="/">
-                <li>Home</li>
-              </Link>
-              <Link href="/about">
-                <li>About</li>
-              </Link>
-              <Link href="/blog">
-                <li>Blogs</li>
-              </Link>
-              <Link href="/contact">
-                <li>contact</li>
-              </Link>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      
       <main className={styles.mainblog}>
         <div className={styles.blogswrap}>
           <div className={styles.blogheading}>
-            <style jsx>
-              {`
-                .myHeading {
-                  color: yellow;
-                }
-              `}
-            </style>
             <h1>
-              
-              <span className="myHeading dummy">My First Blog Page </span>
+              <span className="myHeading">Black Technology Blog </span>
             </h1>
+            <div className={styles.entrymeta}>
+              <span>April 23, 2023</span>
+              <span>
+                <a href="#" rel="category tag">
+                  Technology
+                </a>
+              </span>
+            </div>
+            <div className={styles.imagewrap}>
+              <Image
+                className={styles.blogImage}
+                src="/images/Black-Technolog-Img-2.jpg"
+                width={640}
+                height={427}
+                alt="black-image1"
+              />
+            </div>
             <p>This is the file control system on next js</p>
           </div>
         </div>
-        <div className={styles.blogcontent}>
-          <h2>Popular Blog</h2>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-        </div>
+        
       </main>
+      <footer className={styles.footer}>
+        Copyright © 2023 <a href="#">Black Technology</a>
+      </footer>
     </>
   );
 }

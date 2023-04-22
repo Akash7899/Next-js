@@ -1,0 +1,17 @@
+.mainblog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+.blogcontent h2 {
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+  
+  .blogcontent .blogItem h3 {
+    padding: 5px 0;
+    margin: 5px 0;
+    cursor: pointer;
+  }
