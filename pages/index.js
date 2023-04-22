@@ -20,28 +20,16 @@ export default function Home() {
           <nav className={styles.mainnav}>
             <ul>
               <Link href="/">
-                {" "}
-                <a>
-                  <li>Home</li>{" "}
-                </a>
+                <li>Home</li>
               </Link>
               <Link href="/about">
-                {" "}
-                <a>
-                  <li>About</li>
-                </a>{" "}
+                <li>About</li>
               </Link>
               <Link href="/blog">
-                {" "}
-                <a>
-                  <li>Blogs</li>
-                </a>{" "}
+                <li>Blogs</li>
               </Link>
               <Link href="/contact">
-                {" "}
-                <a>
-                  <li>contact</li>
-                </a>{" "}
+                <li>contact</li>
               </Link>
             </ul>
           </nav>
