@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import Dummy from "@/component/dummy";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function Home() {
       </Head>
       <div className={styles.navbar}>
         <div className="container">
+          <Dummy />
           <nav className={styles.mainnav}>
             <ul>
               <Link href="/">
@@ -38,7 +40,17 @@ export default function Home() {
       <main className={styles.mainblog}>
         <div className={styles.blogswrap}>
           <div className={styles.blogheading}>
-            <h1> My First Blog Page</h1>
+            <style jsx>
+              {`
+                .myHeading {
+                  color: yellow;
+                }
+              `}
+            </style>
+            <h1>
+              
+              <span className="myHeading dummy">My First Blog Page </span>
+            </h1>
             <p>This is the file control system on next js</p>
           </div>
         </div>
