@@ -2,6 +2,10 @@ import React from "react";
 import styles from "../styles/Blog.module.css";
 import Link from "next/link";
 
+// step 1 == collect all the files from blogdata directory
+// step 2 == Itrate throug the and display them
+
+ 
 const Blog = () => {
   return (
     <>
