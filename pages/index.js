@@ -15,91 +15,38 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.navbar}>
-        <div className="container">
-          <nav className={styles.mainnav}>
-            <ul>
-              <Link href="/">
-                {" "}
-                <a>
-                  <li>Home</li>{" "}
-                </a>
-              </Link>
-              <Link href="/about">
-                {" "}
-                <a>
-                  <li>About</li>
-                </a>{" "}
-              </Link>
-              <Link href="/blog">
-                {" "}
-                <a>
-                  <li>Blogs</li>
-                </a>{" "}
-              </Link>
-              <Link href="/contact">
-                {" "}
-                <a>
-                  <li>contact</li>
-                </a>{" "}
-              </Link>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      
       <main className={styles.mainblog}>
         <div className={styles.blogswrap}>
           <div className={styles.blogheading}>
-            <h1> My First Blog Page</h1>
+            <h1>
+              <span className="myHeading">Black Technology Blog </span>
+            </h1>
+            <div className={styles.entrymeta}>
+              <span>April 23, 2023</span>
+              <span>
+                <a href="#" rel="category tag">
+                  Technology
+                </a>
+              </span>
+            </div>
+            <div className={styles.imagewrap}>
+              <Image
+                className={styles.blogImage}
+                src="/images/Black-Technolog-Img-2.jpg"
+                width={640}
+                height={427}
+                alt="black-image1"
+              />
+            </div>
             <p>This is the file control system on next js</p>
           </div>
         </div>
-        <div className={styles.blogcontent}>
-          <h2>Popular Blog</h2>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-          <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
-            <p>
-              Next.js 13.3 adds popular community-requested features and is the
-              last release before the App Router is stable, including:
-            </p>
-          </div>
-        </div>
+        
       </main>
+      <footer className={styles.footer}>
+        Copyright © 2023 <a href="#">Black Technology</a>
+      </footer>
     </>
   );
 }

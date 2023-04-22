@@ -1,9 +1,61 @@
-import React from 'react'
+import React from "react";
+import styles from "../styles/Blog.module.css";
+import Link from "next/link";
 
 const Blog = () => {
   return (
-    <div>This is Blog page </div>
-  )
-}
+    <>
+      <main className={styles.mainblog}>
+        <div className={styles.blogcontent}>
+          <h2>Popular Blog</h2>
+          <div className={styles.blogItem}>
+            <Link href={"/BlogPost/javascript"}>
+              <h3>Next.js 13.3</h3>
+            </Link>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
+          </div>
+          <div className={styles.blogItem}>
+            <h3>Next.js 13.3</h3>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
+          </div>
+          <div className={styles.blogItem}>
+            <h3>Next.js 13.3</h3>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
+          </div>
+          <div className={styles.blogItem}>
+            <h3>Next.js 13.3</h3>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
+          </div>
+          <div className={styles.blogItem}>
+            <h3>Next.js 13.3</h3>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
+          </div>
+          <div className={styles.blogItem}>
+            <h3>Next.js 13.3</h3>
+            <p>
+              Next.js 13.3 adds popular community-requested features and is the
+              last release before the App Router is stable, including:
+            </p>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+};
 
-export default Blog
+export default Blog;
