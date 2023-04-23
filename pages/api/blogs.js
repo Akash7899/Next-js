@@ -2,9 +2,11 @@
 import * as fs from "fs";
 
 export default function handler(req, res) {
-  fs.readFile("blogdata/javascript.json", "utf-8", (err, data) => {
-    console.log("");
+  // http://localhost:3000/api/blogs 
+  fs.readdir("blogdata", (err, data) => { 
 
-    res.status(200).json(JSON.parse(data));
+    console.log(data);
+
+    res.status(200).json(data);
   });
 }

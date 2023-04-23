@@ -14,7 +14,7 @@ const Blog = () => {
           <h2>Popular Blog</h2>
           <div className={styles.blogItem}>
             <Link href={"/BlogPost/javascript"}>
-              <h3>Next.js 13.3</h3>
+              <h3>How to Learn Javascript</h3>
             </Link>
             <p>
               Next.js 13.3 adds popular community-requested features and is the
@@ -22,7 +22,9 @@ const Blog = () => {
             </p>
           </div>
           <div className={styles.blogItem}>
-            <h3>Next.js 13.3</h3>
+          <Link href={"/BlogPost/Rectjs"}>
+              <h3>How to Learn React js</h3>
+            </Link>
             <p>
               Next.js 13.3 adds popular community-requested features and is the
               last release before the App Router is stable, including:

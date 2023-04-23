@@ -45,7 +45,7 @@ export default function Home() {
         
       </main>
       <footer className={styles.footer}>
-        Copyright © 2023 <a href="#">Black Technology</a>
+        Copyright © 2023 <Link href="http://localhost:3000/">Black Technology</Link>
       </footer>
     </>
   );
